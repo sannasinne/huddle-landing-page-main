@@ -110,6 +110,15 @@ button:hover {
     margin-bottom: 30px;
 }
 
+.mockup {
+    display: flex;
+    justify-content: center;
+}
+
+.mockup img {
+    width: 300px;
+}
+
 /* Cards section */
 
 .card {
@@ -214,6 +223,70 @@ ul {
 
 p.copyright {
     font-size: 12px;
+}
+
+/* Desktop styles */
+
+@media screen and (min-width: 990px) {
+    .header {
+        background-image: url(../images/bg-hero-desktop.svg);
+        background-repeat: cover;
+        padding: 50px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    button {
+        padding: 10px 50px 10px;
+        font-size: 14px;
+    }
+
+    .info-mockup {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 43%;
+    }
+
+    .info h1,
+    .info p {
+        text-align: left;
+    }
+
+    .info h1 {
+        font-size: 36px;
+    }
+
+    .info button {
+        align-self: flex-start;
+    }
+
+    .mockup {
+        flex-basis: 57%;
+    }
+
+    .mockup img {
+        width: 600px;
+    }
+
+    .card {
+        display: flex;
+        width: 80vw;
+    }
+
+    .card-text {
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
 
 /* Attribution */
